@@ -1,15 +1,16 @@
-import React from "react";
-import Booking from "../Booking/Booking";
+import React from 'react'
+import Navbar from '../Navbar/Navbar'
+import Hero from '../Hero/Hero'
+import Footer from '../Footer/Footer'
 
-const Home = () => {
+function Home() {
   return (
-    <>
-      <div className="grid grid-cols-1 md:-cols-3">
-        <div className=""><Booking/></div>
-        <div className="col-span-2 order-1 md:order-last">Map</div>
-      </div>
-    </>
-  );
-};
+   <>
+     <Navbar/>
+     <Hero/>
+     <Footer/>
+   </>
+  )
+}
 
-export default Home;
+export default Home
